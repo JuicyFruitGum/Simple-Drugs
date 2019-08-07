@@ -90,14 +90,9 @@ public class Main
   public void Coke(){
 	  ItemStack coke = new ItemStack(Material.SUGAR, 1);
 	  ItemMeta cokemeta = coke.getItemMeta();
-	  cokemeta.setDisplayName(getConfig().getString("Drugs.Items.Coke.Name").replaceAll("&", "ง"));
+	  cokemeta.setDisplayName(getConfig().getString("Drugs.Items.Coke.Name").replaceAll("&", "ยง"));
 	  cokemeta.setLore(Arrays.asList("Luck" 
-			                       , "Healing" 
-			                       , "Fast Digging" 
-			                       , "Glowing" 
-			                       , "Fire Resistance" 
-			                       , "Increase Damage" 
-			                       , "Night Vison"));
+			                       , "Speed"));
 	  coke.setItemMeta(cokemeta);
 
 	  
